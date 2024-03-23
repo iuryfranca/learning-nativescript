@@ -1,8 +1,37 @@
-<ActionBar>
-  <Label text="Home"></Label>
+<ActionBar style="background-color: white">
+  <FlexboxLayout flexDirection="column" alignItems="flex-start" padding="10 0">
+    <Image
+      src="https://www.gcom.com.br/ImagesAppGcom/logo-spoleto.png"
+      style="height: 100px"
+      width="200"
+      horizontalAlignment="left"
+    ></Image>
+    <FlexboxLayout
+      flexDirection="row"
+      justifyContent="space-between"
+      width="100%"
+    >
+      <FlexboxLayout flexDirection="row">
+        <Label text="&#xe55b;" class="m-icon text-geral"></Label>
+        <Label text="Digite seu endereço de entrega" class="text-geral"></Label>
+        <Label text="&#xe5cf;" class="m-icon-outline text-geral"></Label>
+      </FlexboxLayout>
+
+      <Label
+        text="&#xe8b6;"
+        class="m-icon-outline text-geral"
+        style="font-size: 30"
+      ></Label>
+    </FlexboxLayout>
+  </FlexboxLayout>
 </ActionBar>
 
-<GridLayout>
+<StackLayout>
+  <Image
+    src="https://www2.gcom.com.br/ImagensCardapio/9763/1023/banners/image_14032022131203.png"
+    width="100%"
+  ></Image>
+
   <ListView [items]="items">
     <ng-template let-item="item">
       <StackLayout [nsRouterLink]="['../item', item.id]">
@@ -10,4 +39,4 @@
       </StackLayout>
     </ng-template>
   </ListView>
-</GridLayout>
+</StackLayout>

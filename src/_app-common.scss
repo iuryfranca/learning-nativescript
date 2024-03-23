@@ -20,8 +20,20 @@
   font-weight: 400;
 }
 
+.m-icon {
+  font-family: 'Material Icons', 'MaterialIcons-Regular';
+  font-weight: 400;
+}
+
+.m-icon-outline {
+  font-family: 'Material Icons', 'MaterialIconsOutlined-Regular';
+  font-weight: 400;
+}
+
+
 // Custom tabstrip item class
 .navigation__item {
+
   &:active,
   &:active Label {
     @include colorize($contrasted-color: complementary background 20% 0%);
@@ -30,6 +42,7 @@
 
 // Common page class
 .page__content {
+
   &-icon,
   &-placeholder {
     color: const(grey);
